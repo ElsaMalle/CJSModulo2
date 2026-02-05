@@ -1,0 +1,79 @@
+/* Estilos CSS externos para replicar el diseño de dos columnas */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Columna Izquierda con el color de fondo claro */
+.left-column {
+    flex: 1;
+    background-color: #d9f2e3; /* Verde claro menta */
+    padding: 40px 20px;
+}
+
+.right-column {
+    flex: 2;
+    padding: 40px 40px;
+}
+
+/* Estilo para los nombres y títulos principales */
+h1 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los títulos de sección con el color verde oscuro del PDF */
+h2 {
+    color: #558b6e; /* Verde oscuro */
+    border-bottom: 2px solid #558b6e;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+h3 {
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.section-content {
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+}   
+
+.profile-pic img {
+    border-radius: 25px;
+    width: 150px;
+    height: auto;
+}
+/* Media query para hacerlo responsive en móviles, las columnas se apilan */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
