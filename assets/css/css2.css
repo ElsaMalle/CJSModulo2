@@ -1,4 +1,4 @@
-/* Estilos CSS externos para replicar el diseño de dos columnas */
+/* Estilos CSS externos diseño de dos columnas */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
@@ -17,13 +17,13 @@ body {
 }
 
 /* Columna Izquierda con el color de fondo claro */
-.left-column {
+.columnaizquierda {
     flex: 1;
     background-color: #d9f2e3; /* Verde claro menta */
     padding: 40px 20px;
 }
 
-.right-column {
+.columnaderecha {
     flex: 2;
     padding: 40px 40px;
 }
@@ -32,33 +32,35 @@ body {
 h1 {
     color: #333;
     margin-bottom: 5px;
+    font-size: 36px;
 }
 
-/* Estilo para los títulos de sección con el color verde oscuro del PDF */
+/* Estilo para los títulos de sección con el color verde oscuro */
 h2 {
     color: #558b6e; /* Verde oscuro */
     border-bottom: 2px solid #558b6e;
     padding-bottom: 5px;
     margin-top: 20px;
     text-transform: uppercase;
-    font-size: 1em;
-}
+    font-size: 1.5em;
+} 
 
 h3 {
     color: #555;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 0px;
+    font-size: 20px;
 }
 
 .contact-info p {
     margin: 0;
 }
 
-.section-content {
+.contenido {
     margin-bottom: 15px;
 }
 
-.profile-pic {
+.foto {
 
     display: flex;
     flex: 1;
@@ -66,11 +68,14 @@ h3 {
     align-items: flex-start;
 }   
 
-.profile-pic img {
+.fono img {
     border-radius: 25px;
     width: 150px;
     height: auto;
 }
+
+
+
 /* Media query para hacerlo responsive en móviles, las columnas se apilan */
 @media (max-width: 768px) {
     .container {
